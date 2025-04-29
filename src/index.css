@@ -1,0 +1,79 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #d9cdc4!important;
+  font-family: "montserrat";
+  text-transform: capitalize;
+}
+input[type=text] {
+ padding: 14px;
+ border-radius: 10px;
+ border: 2px rgb(255, 255, 255);
+ box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+ justify-content: center;
+ width: 370px;
+ height: 100%;
+ background: white url(/images/icons8-search-25.png);
+ background-repeat: no-repeat;
+ background-position: right 8px center;
+ background-size: 25px;
+}
+input[type=text]:focus {
+ border: none;
+ outline: 0;
+}
+.current-weather {
+  margin: 30px 160px 30px 20px;
+  border: 60px solid #82c0cc;
+  border-radius: 8px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 520px;
+  color: #f9f9f9;
+  background-color: #82c0cc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.current-weather h2 {
+  font-size: 30px;
+  margin: 0;
+  padding-left: 130px;
+  margin-bottom: 20px;
+}
+.weekly-forecast {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: #f9f9f9;
+}
+.weekly-forecast .day {
+  border: 1px solid #82c0cc;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #82c0cc;
+}
+button {
+  padding: 13px 20px;
+  margin-left: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #82c0cc;
+  color: white;
+  cursor: pointer;
+}
+.weather-icon {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 820px;
+  bottom: 10px;
+}
