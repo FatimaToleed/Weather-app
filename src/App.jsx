@@ -20,12 +20,12 @@ function App() {
 
     setSearchedCity(city);
 
-    const apiKey = '6d0c4c1aeb3f4f295f9ad305733c450a'; // OpenWeatherMap API key
+    const apiKey = import.meta.env.VITE_API_KEY; // OpenWeatherMap API key
     const baseURL = 'https://api.openweathermap.org/data/2.5';
 
     try {
       const currentWeatherResponse = await fetch(
-        `${baseURL}/weather?q=${city}&units=metric&appid=${apiKey}`
+        `${baseURL}/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_API_KEY}`
       );
 
       if (!currentWeatherResponse.ok) {
@@ -37,7 +37,7 @@ function App() {
       
       // Fetch 5-day forecast data
       const forecastResponse = await fetch(
-        `${baseURL}/forecast?q=${city}&units=metric&appid=${apiKey}`
+        `${baseURL}/forecast?q=${city}&units=metric&appid=${import.meta.env.VITE_API_KEY}`
       );
 
       if (!forecastResponse.ok) {
