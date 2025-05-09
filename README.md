@@ -1,7 +1,3 @@
-Here’s your cleaned-up `README.md` without the project structure section:
-
----
-
 # 🌦️ Weather App
 
 A simple yet robust weather application built with **Vite + React**. It provides real-time weather updates and a 7-day forecast for any city.
@@ -55,10 +51,6 @@ Create a `.env` file in the root directory and add your API key:
 ```env
 VITE_API_KEY=your_openweathermap_api_key
 ```
-
-> `VITE_` prefix is required for Vite to access the key in the app.
-
----
 
 ## 🧪 Running the App
 
